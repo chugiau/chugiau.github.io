@@ -115,10 +115,3 @@ jsonContent:
 plugins:
 ## Themes: https://hexo.io/themes/
 theme: material
-
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repo: git@gitlab.com:xenstalker/blog.git
-  branch: master
