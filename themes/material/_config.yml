@@ -148,7 +148,7 @@ hanabi:
     enable: false
     line_number: false
     includeDefaultColors: false
-    customColors: 
+    customColors:
 
 # Post License
 # You can specify the text you want to show in the end of your posts and pages, HTML tag is supported.
@@ -184,17 +184,17 @@ sns:
     facebook:
     twitter: https://twitter.com/xenstalker
     googleplus: https://plus.google.com/107332411942660923999
-    github: https://github.com/xenstalker
-    linkedin: https://www.linkedin.com/in/zi-yao-jian-367b7997/
     weibo:
     instagram:
     tumblr:
+    github: https://github.com/xenstalker
     linkedin:
     zhihu:
     bilibili:
     telegram:
     v2ex:
     segmentfault:
+    #linkedin: https://www.linkedin.com/in/zi-yao-jian-367b7997/
 
 # SNS Share Switch
 sns_share:
