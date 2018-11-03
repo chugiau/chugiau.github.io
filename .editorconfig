@@ -1,0 +1,4 @@
+root = true
+
+[*.md]
+tab_width = 2
