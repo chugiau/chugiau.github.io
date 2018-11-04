@@ -46,7 +46,7 @@ scheme: Paradox
 
 # UI & UX: slogan, color, effect
 uiux:
-    slogan: "Imagination is your superpower."
+    slogan: ""
     theme_color: "#0097A7"
     theme_sub_color: "#00838F"
     hyperlink_color: "#00838F"
@@ -101,7 +101,7 @@ img:
 #        - If you have setup your custom font-family, don't forget to add style tag with @font-face or link.tag with font css
 #          to /source/data/head.yml as custom code, to load custom font files.
 fonts:
-    family: Roboto, "Helvetica Neue", Helvetica, "Noto Sans CJK TC", Arial, sans-serif
+    family: Roboto, "Helvetica Neue", Helvetica, "Noto Sans CJK TC", "Microsoft JhengHei", Arial, sans-serif
     use: google
     custom_font_host:
 
@@ -136,7 +136,7 @@ qrcode:
 #        theme: # Available value in /source/css/prettify/[theme].min.css
 prettify:
     enable: true
-    theme: "github-v2"
+    theme: "tomorrow-night"
 
 #    Hanabi (https://github.com/egoist/hanabi)
 #        line_number: [true/false] # Show line number for code block
@@ -146,8 +146,8 @@ prettify:
 #                    - If `includeDefaultColors` is false, this will instead default color pool
 hanabi:
     enable: false
-    line_number: false
-    includeDefaultColors: false
+    line_number: true
+    includeDefaultColors: true
     customColors:
 
 # Post License
@@ -194,7 +194,6 @@ sns:
     telegram:
     v2ex:
     segmentfault:
-    #linkedin: https://www.linkedin.com/in/zi-yao-jian-367b7997/
 
 # SNS Share Switch
 sns_share:
@@ -323,7 +322,7 @@ busuanzi:
     enable: false
     all_site_uv: false
     post_pv: false
-    busuanzi_pure_mini_js: "https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"
+    busuanzi_pure_mini_js: "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
 
 # Files Vendors
 # Set a CDN for the files src you want to customize. The url should with protocol.
