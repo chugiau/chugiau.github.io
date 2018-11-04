@@ -1,12 +1,13 @@
 ---
 title: Unity Resources 系統的最佳實務做法
+date: 2017-06-18 05:47:33
+categories:
+  - Technical
 tags:
   - Unity
   - Resources
   - AssetBundle
   - Best Practices
-categories: Technical
-date: 2017-06-18 05:47:33
 ---
 
 

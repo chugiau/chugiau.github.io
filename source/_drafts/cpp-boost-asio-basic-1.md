@@ -1,6 +1,8 @@
 ---
 title: C++ Boost Asio 基本介紹
 date: 2018-08-04 11:16:22
+categories:
+  - Technical
 tags:
   - C++
   - C++11
@@ -15,7 +17,6 @@ tags:
   - Async
   - Proactor
   - Design Pattern
-categories: Technical
 ---
 
 最近我在用 Boost.Asio 來開發伺服器，趁著還有在用的時候趕快寫下來，好方便之後複習。

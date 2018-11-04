@@ -1,7 +1,8 @@
 ---
 title: Hexo 插件載入地雷
 date: 2016-11-21 15:27:59
-categories: Technical
+categories:
+  - Technical
 tags:
   - Hexo
   - plugins

@@ -1,12 +1,13 @@
 ---
 title: 'LeetCode Problems: 9. Palindrome Number'
 date: 2017-05-07 00:34:07
-categories: Technical
+categories:
+  - Technical
 tags:
-    - LeetCode
-    - Algorithms
-    - Palindrome Number
-    - C++
+  - LeetCode
+  - Algorithms
+  - Palindrome Number
+  - C++
 ---
 
 # 摘要

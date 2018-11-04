@@ -1,7 +1,8 @@
 ---
 title: 'LeetCode Problems: 561. Array Partition I'
 date: 2017-05-07 18:09:27
-categories: Technical
+categories:
+  - Technical
 tags:
   - LeetCode
   - Algorithms

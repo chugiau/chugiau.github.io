@@ -1,7 +1,8 @@
 ---
 title: 安裝 Redmine 3.3
 date: 2017-04-14 21:45:23
-categories: Technical
+categories:
+  - Technical
 tags:
   - Redmine
   - Ubuntu

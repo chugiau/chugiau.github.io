@@ -1,12 +1,13 @@
 ---
 title: PowerShell Get-Content 讀檔換行陷阱
 date: 2017-11-18 18:12:23
-categories: Technical
+categories:
+  - Technical
 tags:
-    - PowerShell
-    - Get-Content
-    - EOL
-    - .NET
+  - PowerShell
+  - Get-Content
+  - EOL
+  - .NET
 ---
 
 最近遇到一個 PowerShell 的陷阱，用 `Get-Content` 讀檔時，不會保留換行符號。因為 `Get-Content` 行為是單行回傳物件，多行回傳陣列，而不是單一字串。

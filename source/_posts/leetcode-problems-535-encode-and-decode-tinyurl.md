@@ -1,13 +1,14 @@
 ---
 title: 'LeetCode Problems: 535. Encode and Decode TinyURL'
 date: 2017-05-07 12:26:31
-categories: Technical
+categories:
+  - Technical
 tags:
-    - LeetCode
-    - Algorithms
-    - Encode and Decode TinyURL
-    - TinyURL
-    - C++
+  - LeetCode
+  - Algorithms
+  - Encode and Decode TinyURL
+  - TinyURL
+  - C++
 ---
 
 # 摘要

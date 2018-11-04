@@ -1,12 +1,13 @@
 ---
 title: 'LeetCode Problems: 1. Two Sum'
 date: 2017-04-30 12:57:42
-categories: Technical
+categories:
+  - Technical
 tags:
-    - LeetCode
-    - Algorithms
-    - Two Sum
-    - C++
+  - LeetCode
+  - Algorithms
+  - Two Sum
+  - C++
 ---
 
 # 摘要

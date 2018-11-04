@@ -1,13 +1,14 @@
 ---
 title: Unity 5 AssetBundle 基礎
+date: 2017-06-21 08:25:32
+categories:
+  - Technical
 tags:
   - Unity
   - AssetBundle
   - AssetBundleManifest
   - WWW
   - UnityWebRequest
-categories: Technical
-date: 2017-06-21 08:25:32
 ---
 
 

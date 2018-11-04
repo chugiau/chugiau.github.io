@@ -1,13 +1,14 @@
 ---
 title: C++ 通用 value 轉 bytes，bytes 轉 value
 date: 2018-09-10 22:19:22
+categories:
+	- Technical
 tags:
   - C++
   - C++11
   - C++14
   - C++17
   - Conversion
-categories: Technical
 ---
 
 記錄一下 C++ 如何方便快速將一個簡單數值轉成 bytes。

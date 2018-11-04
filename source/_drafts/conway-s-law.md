@@ -1,6 +1,7 @@
 ---
 title: 系統架構與公司組織的交互作用──康威定律（Conway's Law）
-categories: General
+categories:
+  - General
 tags:
   - Conway's Law
   - Architecture

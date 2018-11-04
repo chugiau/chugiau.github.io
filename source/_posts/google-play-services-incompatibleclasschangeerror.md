@@ -1,6 +1,8 @@
 ---
 title: Google Play Services IncompatibleClassChangeError
 date: 2018-04-04 12:51:06
+categories:
+  - Technical
 tags:
   - Android
   - Java
@@ -8,7 +10,6 @@ tags:
   - GoogleApiClient
   - IncompatibleClassChangeError
   - Unity
-categories: Technical
 ---
 
 之前工作在接第三方登入 SDK 時，遇到 `GoogleApiClient.connect()' was expected to be of type interface but was found to be virtual` 這個錯誤。
