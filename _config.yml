@@ -12,8 +12,8 @@ timezone: Asia/Taipei
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://xenstalker.tw
-enforce_ssl: xenstalker.tw
+url: https://code.xenstalker.tw
+enforce_ssl: code.xenstalker.tw
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -113,5 +113,7 @@ jsonContent:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 plugins:
+
 ## Themes: https://hexo.io/themes/
-theme: material
+#theme: material
+theme: cactus
