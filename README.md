@@ -1,4 +1,4 @@
-![Build Status](https://gitlab.com/pages/hexo/badges/master/build.svg)
+[![pipeline status](https://gitlab.com/tychientw/tychientw.gitlab.io/badges/master/pipeline.svg)](https://gitlab.com/tychientw/tychientw.gitlab.io/-/commits/master)
 
 ---
 
