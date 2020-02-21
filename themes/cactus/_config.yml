@@ -5,7 +5,7 @@
 # Link to a page that gives an overview of all your projects.
 # This can be an external link (e.g., to you GitHub profile) or to another
 # page within your website.
-projects_url: https://github.com/xenstalker
+projects_url: https://github.com/tychientw
 
 # Set the page direction to RTL or LTR. default is LTR. (if you set it 'rtl', the 'vazir' font will be loaded.)
 direction: ltr
@@ -17,7 +17,7 @@ nav:
   home: /
   about: /about/
   articles: /archives/
-  projects: https://github.com/xenstalker
+  projects: https://github.com/tychientw
 
 
 # Links to your social media accounts.
@@ -25,9 +25,9 @@ nav:
 # (see https://fontawesome.com/icons?d=gallery&s=brands);
 # only 'mail' is an exception.
 social_links:
-  github: https://github.com/xenstalker
-  gitlab: https://gitlab.com/xenstalker
-  twitter: https://twitter.com/xenstalker
+  github: https://github.com/tychientw
+  gitlab: https://gitlab.com/tychientw
+  twitter: https://twitter.com/tychientw
   # facebook: /
   # linkedin: /
   mail: mailto:xenstalker@gmail.com
@@ -107,7 +107,7 @@ rss: false
 open_graph:
   fb_app_id:
   fb_admins:
-  twitter_id: xenstalker
+  twitter_id: tychientw
   google_plus:
 
 
@@ -118,7 +118,7 @@ open_graph:
 # Fill in your Disqus Comments Shortname to enable Disqus comments.
 disqus:
   enabled: true
-  shortname: xenstalker
+  shortname: tychientw
 
 # Fill in your Google Analytics tracking ID to enable Google Analytics.
 google_analytics:
