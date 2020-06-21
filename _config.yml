@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Tzu-yao's Blog
+title: Chú-giâu's Blog
 subtitle: 一位遊戲開發者的部落格
-description: 這裡是 Tzu-yao 的部落格，記錄一些開發過程中遇到的問題及解法，以遊戲開發相關為主。
-author: Chien Tzu-yao
+description: 這裡是 Chú-giâu 的部落格，記錄一些開發過程中遇到的問題及解法，以遊戲開發相關為主。
+author: KÁN Chú-giâu
 language: zh-TW
 timezone: Asia/Taipei
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://code.tychientw.space
-enforce_ssl: code.tychientw.space
+url: https://code.chugiau.ninja
+enforce_ssl: code.chugiau.ninja
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
