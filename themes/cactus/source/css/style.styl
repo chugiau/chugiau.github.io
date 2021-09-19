@@ -1,9 +1,9 @@
-@import "_fonts"
 @import "_variables"
 @import "_colors/" + $colors
 @import "_util"
 @import "_mixins"
 @import "_extend"
+@import "_fonts"
 
 global-reset()
 
@@ -19,6 +19,7 @@ html
   -ms-text-size-adjust: 100%
 
 body
+  margin: 0
   height: 100%
   background-color: $color-background
   color: $color-text
@@ -39,6 +40,7 @@ body
   display: flex
   flex-direction: column
   min-height: 100%
+  overflow-wrap: break-word
 
   p
     hyphens(auto)
@@ -119,6 +121,7 @@ body
 @import "_partial/pagination"
 @import "_partial/search"
 @import "_partial/tags"
+@import "_partial/tooltip"
 @import "_partial/categories"
 // Code
 @import "_highlight/" + $highlight
@@ -129,7 +132,7 @@ pre
   padding-bottom: 0
   border: 1px dotted $color-border
   border-radius: 4px
-  font-size: 16px
+  font-size: 13px
   font-family: $font-family-mono
   line-height: 22px
   -webkit-border-radius: 4px
@@ -159,7 +162,7 @@ code
     margin: -5px 0 5px
     color: $color-meta-code
     font-size: .9em
-    zoom: 1
+    transform: scale(1)
 
     a
       float: right
@@ -178,7 +181,21 @@ code
     &:after
       clear: both
 
+  &:hover 
+    .btn-copy
+      opacity: 1
+
+  .btn-copy
+    font-size: 1.2rem
+    position: absolute
+    right: 20px
+    opacity: 0
+    transition: opacity 0.2s ease-in
+    &:hover
+      color: $color-accent-1
+
   pre
+    margin: 0
     padding: 0
     border: none
     background: none
@@ -188,6 +205,7 @@ code
 
   td.gutter
     text-align: right
+    opacity: .2
 
   .line
     height: 22px

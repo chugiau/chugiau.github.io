@@ -36,19 +36,19 @@ search:
   no_results: 未找到結果。
 
 tag_cloud:
-  zero: 沒有標籤
+  zero: 目前沒有標籤
 
 pagination:
   page: '%d 之 %d 頁'
 
 counter:
   tag_cloud:
-    zero: 沒有標籤
+    zero: 目前沒有標籤
     one: ""
     other: ""
 
   categories:
-    zero: 沒有分類
+    zero: 目前沒有分類
     one: ""
     other: ""
 
