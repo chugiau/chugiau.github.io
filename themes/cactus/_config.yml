@@ -5,7 +5,7 @@
 # Link to a page that gives an overview of all your projects.
 # This can be an external link (e.g., to you GitHub profile) or to another
 # page within your website.
-projects_url: https://github.com/tychientw
+projects_url: https://github.com/chugiau
 
 # Set the page direction to RTL or LTR. default is LTR. (if you set it 'rtl', the 'vazir' font will be loaded.)
 direction: ltr
@@ -17,7 +17,9 @@ nav:
   home: /
   about: /about/
   articles: /archives/
-  projects: https://github.com/tychientw
+  categories: /categories/
+  tags: /tags/
+  search: /search/
 
 
 # Links to your social media accounts.
@@ -25,16 +27,16 @@ nav:
 # (see https://fontawesome.com/icons?d=gallery&s=brands);
 # only 'mail' is an exception.
 social_links:
-  github: https://github.com/tychientw
-  gitlab: https://gitlab.com/tychientw
-  twitter: https://twitter.com/tychientw
+  github: https://github.com/chugiau
+  # gitlab: https://gitlab.com/chugiau
+  # twitter: https://twitter.com/tychientw
   # facebook: /
   # linkedin: /
-  mail: mailto:xenstalker@gmail.com
+  mail: mailto:kan@chugiau.ninja
 
 # Customize the overview with displaying a tagcloud on the index page.
 # Options: https://hexo.io/docs/helpers.html#tagcloud
-tags_overview: false
+tags_overview: true
 
 # Customize the overview with the most recent blog posts on the index page.
 # Options:
@@ -58,7 +60,7 @@ archive:
 # Options:
 #   - show_updated: show the last modification date.
 post:
-  show_updated: false
+  show_updated: true
 
 # Customize the copyright years
 # Note: if start_year/end_year not provided, will use current year.
@@ -83,7 +85,7 @@ logo:
   width: 50
   height: 50
   url: /images/logo.png
-  gravatar: true
+  gravatar: false
   grayout: true
 
 # Customize the favicons.
@@ -98,22 +100,22 @@ logo:
 favicon:
   desktop:
     url: /images/favicon.ico
-    gravatar: true
+    gravatar: false
   android:
     url: /images/favicon-192x192.png
-    gravatar: true
+    gravatar: false
   apple:
     url: /images/apple-touch-icon.png
-    gravatar: true
+    gravatar: false
 
 # The color scheme that should be used to highlight codeblocks.
 # See source/css/_highlight for a list of all available color schemes.
-highlight: tomorrow-night
+highlight: atelier-forest-light
 
 # Set the color scheme.
 # Available color schemes are 'dark', 'light', 'classic' and 'white'.
 # Alternatively, add your own custom color scheme to source/css/_colors.
-colorscheme: dark
+colorscheme: white
 
 # Maximal width of the page in rem units.
 page_width: 48
@@ -124,13 +126,13 @@ page_width: 48
 ##############################################################################
 
 # Enable or disable the RSS feed.
-rss: false
+rss: true
 
 # Turn your web pages into graph objects (see http://ogp.me).
 open_graph:
   fb_app_id:
   fb_admins:
-  twitter_id: tychientw
+  twitter_id:
   google_plus:
 
 
@@ -140,44 +142,44 @@ open_graph:
 
 # Enable MathJax support for Latex
 mathjax:
-  enabled: false
+  enabled: true
   
 # Fill in your Disqus Comments Shortname to enable Disqus comments.
 disqus:
-  enabled: true
+  enabled: false
   shortname: tychientw
 
 # Fill in your Google Analytics tracking ID to enable Google Analytics.
 google_analytics:
-  enabled: true
-  id: UA-86112629-1
+  enabled: false
+  id:
 
 # Fill in your Baidu Analytics tracking ID to enable Baidu Analytics.
 baidu_analytics:
   enabled: false
-  id: 2e6da3c375c8a87f5b664cea6d4cb29c
+  id:
 
 # Fill in your Cloudflare Analytics tracking ID to enable Cloudflare Analytics.
 cloudflare_analytics:
   enabled: false
-  id: 0dabb6e21848405483a237e6a7b6ed04
+  id:
 
 # Fill in your Umami Analytics tracking ID to enable Umami Analytics.
 umami_analytics:
   enabled: false
-  id: e77e68be-f6e4-4br3-9365-2b76b57cd571
-  host: https://analytics.domain.com
+  id:
+  host:
 
 # Fill in you Gravatar email or hash if you want to use your gravatar as the
 # logo and/or favicons of you website.
 # To generate hash: `$ echo -n "name@email.com" | md5`.
 gravatar:
-  email: xenstalker@gmail.com
-  hash: 7449bd5dd44ac443ffda920139d4fc06
+  email: kan@chugiau.ninja
+  hash: 8eca0b95a89e071dbca8e887dcfec505
 
 # loads libraries and styles from CDN instead or relying on local files
 cdn:
-  enable: true
+  enable: false
   jquery: https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js
   clipboard: https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js
   font_awesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css
