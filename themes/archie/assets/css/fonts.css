@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap");
+
 /* fira-sans-regular - latin */
 @font-face {
   font-family: 'Fira Sans';
@@ -37,7 +40,7 @@
        url('../fonts/ibm-plex-mono-v6-latin-500italic.svg#IBMPlexMono') format('svg'); /* Legacy iOS */
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Noto Sans TC';
   font-style: normal;
   font-weight: 400;
@@ -75,7 +78,7 @@
        url('../fonts/NotoSerifTC-Bold.woff2') format('woff2'),
        url('../fonts/NotoSerifTC-Bold.woff') format('woff'),
        url('../fonts/NotoSerifTC-Bold.otf') format('opentype');
-}
+} */
 
 @font-face {
   font-family: 'JetBrains Mono';
