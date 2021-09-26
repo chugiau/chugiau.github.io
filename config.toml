@@ -1,0 +1,113 @@
+baseURL = "https://chugiau.ninja"
+languageCode = "zh-tw"
+defaultContentLanguage = "zh-tw"
+title = "KÁN Chúgiâu"
+copyright = "© KÁN Chúgiâu"
+theme = "archie"
+
+hasCJKLanguage = true
+
+# pygmentsstyle = "monokai"
+# pygmentscodefences = true
+# pygmentscodefencesguesssyntax = true
+
+paginate = 7
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = false
+  [[related.indices]]
+    name = "series"
+    weight = 200
+  [[related.indices]]
+    name = 'keywords'
+    weight = 100
+  [[related.indices]]
+    name = "categories"
+    weight = 20
+  [[related.indices]]
+    name = "tags"
+    weight = 50
+
+[languages]
+  [languages.zh-tw]
+    languageName = "繁體中文"
+    weight = 1
+
+[taxonomies]
+  category = 'categories'
+  series = 'series'
+  tag = 'tags'
+
+[params]
+  mode = "toggle"
+  useCDN = false
+  subtitle = ""
+  [[params.social]]
+    name = "GitHub"
+    icon = "github"
+    url = "https://github.com/chugiau"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 10
+
+[[menu.main]]
+  name = "Posts"
+  url = "/posts"
+  weight = 20
+
+[[menu.main]]
+  name = "Series"
+  url = "/series"
+  weight = 25
+
+[[menu.main]]
+  name = "Categories"
+  url = "/categories"
+  weight = 30
+
+[[menu.main]]
+  name = "Tags"
+  url = "/tags"
+  weight = 40
+
+[[menu.main]]
+  name = "About"
+  url = "/about"
+  weight = 50
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_lines = ''
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = true
+    style = 'native'
+    tabWidth = 4
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xhtml = false
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = 'github'
+      [markup.goldmark.parser.attribute]
+        block = false
+        title = true
