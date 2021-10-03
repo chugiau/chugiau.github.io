@@ -3,12 +3,17 @@ title: Google Play Services IncompatibleClassChangeError
 date: 2018-04-04 12:51:06
 categories:
   - Technical
-tags:
+keywords:
   - Android
   - Java
   - Google Play Services
   - GoogleApiClient
   - IncompatibleClassChangeError
+  - Unity
+tags:
+  - Android
+  - Java
+  - Google Play Services
   - Unity
 ---
 

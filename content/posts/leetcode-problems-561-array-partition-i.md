@@ -3,13 +3,14 @@ title: 'LeetCode Problems: 561. Array Partition I'
 date: 2017-05-07 18:09:27
 categories:
   - Technical
-tags:
+keywords:
   - LeetCode
-  - Algorithms
-  - Array Partition I
+  - Array Partition
   - Array
   - Sort
   - C++
+tags:
+  - LeetCode
 ---
 
 # 摘要

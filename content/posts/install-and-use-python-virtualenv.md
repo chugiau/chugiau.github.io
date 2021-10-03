@@ -3,7 +3,7 @@ title: 安裝並使用 Python virtualenv
 date: 2018-11-03 22:05:01
 categories:
   - Technical
-tags:
+keywords:
   - Python
   - virtualenv
   - pyenv
@@ -13,6 +13,9 @@ tags:
   - choco
   - macOS
   - Windows
+tags:
+  - Python
+  - virtualenv
 ---
 
 # 簡介

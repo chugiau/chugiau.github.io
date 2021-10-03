@@ -3,7 +3,7 @@ title: 安裝 Redmine 3.3
 date: 2017-04-14 21:45:23
 categories:
   - Technical
-tags:
+keywords:
   - Redmine
   - Ubuntu
   - MySQL
@@ -15,6 +15,8 @@ tags:
   - Nginx
   - SSL
   - Project Management
+tags:
+  - Redmine
 ---
 
 # 摘要

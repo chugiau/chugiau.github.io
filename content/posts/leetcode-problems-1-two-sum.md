@@ -3,11 +3,12 @@ title: 'LeetCode Problems: 1. Two Sum'
 date: 2017-04-30 12:57:42
 categories:
   - Technical
-tags:
+keywords:
   - LeetCode
-  - Algorithms
   - Two Sum
   - C++
+tags:
+  - LeetCode
 ---
 
 # 摘要

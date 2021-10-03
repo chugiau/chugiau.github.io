@@ -3,11 +3,12 @@ title: 'LeetCode Problems: 7. Reverse Integer'
 date: 2017-05-01 00:52:17
 categories:
   - Technical
-tags:
+keywords:
   - LeetCode
-  - Algorithms
   - Reverse Integer
   - C++
+tags:
+  - LeetCode
 ---
 
 # 摘要

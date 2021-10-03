@@ -3,13 +3,15 @@ title: Hexo 插件載入地雷
 date: 2016-11-21 15:27:59
 categories:
   - Technical
-tags:
+keywords:
   - Hexo
   - plugins
   - hexo-deployer-git
   - hexo-generator-cname
   - package.json
   - config
+tags:
+  - Hexo
 ---
 
 # 摘要

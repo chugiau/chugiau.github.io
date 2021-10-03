@@ -3,6 +3,20 @@ title: C++ Boost Asio 基本介紹
 date: 2018-08-04 11:16:22
 categories:
   - Technical
+keywords:
+  - C++
+  - C++11
+  - C++14
+  - C++17
+  - C++20
+  - Boost
+  - Asio
+  - Network
+  - TCP
+  - Socket
+  - Async
+  - Proactor
+  - Design Pattern
 tags:
   - C++
   - C++11

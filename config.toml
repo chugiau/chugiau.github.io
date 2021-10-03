@@ -39,7 +39,6 @@ paginate = 5
 
 [taxonomies]
   category = 'categories'
-  series = 'series'
   tag = 'tags'
 
 [menus]
@@ -48,11 +47,6 @@ paginate = 5
     name = "Posts"
     url = "/posts/"
     weight = 20
-  [[menus.main]]
-    identifier = "series"
-    name = "Series"
-    url = "/series/"
-    weight = 25
   [[menus.main]]
     identifier = "categories"
     name = "Categories"

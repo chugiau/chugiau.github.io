@@ -3,11 +3,12 @@ title: 'LeetCode Problems: 461. Hamming Distance'
 date: 2017-05-09 00:44:05
 categories:
   - Technical
-tags:
+keywords:
   - LeetCode
-  - Algorithms
   - Hamming Distance
   - C++
+tags:
+  - LeetCode
 ---
 
 # 摘要
