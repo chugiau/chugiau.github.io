@@ -37,11 +37,6 @@ paginate = 5
     name = "tags"
     weight = 50
 
-[languages]
-  [languages.zh-tw]
-    languageName = "繁體中文"
-    weight = 1
-
 [taxonomies]
   category = 'categories'
   series = 'series'
@@ -96,21 +91,17 @@ paginate = 5
   hideSummary = false
   showToc = true
   tocOpen = false
-  [params.profileMode]
-    enabled = true
-    subtitle = "No Game No Life"
-    [[params.profileMode.buttons]]
-      name = "Posts"
-      url = "/posts"
-    [[params.profileMode.buttons]]
-      name = "Tags"
-      url = "/tags"
+  images = ["img/icon.png"]
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/chugiau"
   [[params.socialIcons]]
     name = "email"
     url = "mailto:kan@chugiau.ninja"
+  [params.cover]
+    hidden = false
+    hiddenInList = false
+    hiddenInSingle = false
   [params.fuseOpts]
     isCaseSensitive = false
     shouldSort = true
@@ -118,7 +109,30 @@ paginate = 5
     distance = 1000
     threshold = 0.4
     minMatchCharLength = 0
-    keys = ["title", "permalink", "summary", "content"]
+    keys = [
+      "title",
+      "series",
+      "categories",
+      "keywords",
+      "tags",
+      "summary",
+      "content",
+    ]
+  [params.assets]
+    disableHLJS = true
+  [params.homeInfoParams]
+    title = "Hi there!"
+    content = "Welcome to my blog"
+  [params.profileMode]
+    enabled = false
+    subtitle = "No Game No Life"
+    [[params.profileMode.buttons]]
+      name = "Posts"
+      url = "/posts"
+    [[params.profileMode.buttons]]
+      name = "Tags"
+      url = "/tags"
+
 
 [privacy]
   [privacy.vimeo]
@@ -132,11 +146,12 @@ paginate = 5
   [privacy.insagram]
     disable = true
     simple = true
-  [youtube]
+  [privacy.youtube]
     disable = true
     privacyEnhanced = true
 
 [markup]
+  defaultMarkdownHandler = "goldmark"
   [markup.highlight]
     anchorLineNos = false
     codeFences = true
@@ -147,7 +162,7 @@ paginate = 5
     lineNos = true
     lineNumbersInTable = true
     noClasses = true
-    style = 'native'
+    style = "native"
     tabWidth = 4
   [markup.goldmark]
     [markup.goldmark.renderer]
