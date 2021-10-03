@@ -57,7 +57,7 @@ TinyURL 是一個縮短 URL  的網址，例如 `https://leetcode.com/problems/d
 // solution.decode(solution.encode(url));
 ```
 
-因此，直接回傳參數就好了，真的，沒騙人。
+因此，直接回傳參數就好了。
 
 ### C++
 

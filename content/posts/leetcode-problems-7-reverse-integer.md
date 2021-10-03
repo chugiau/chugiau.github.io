@@ -11,10 +11,6 @@ tags:
   - LeetCode
 ---
 
-# 摘要
-
-此文是筆者在解 LeetCode Problems: 7. Reverse Integer 的過程。其實第一次想到的方法是用字串處理，但肯定不夠快。因此又思考一下，用計算的就可以了。其實這題的 tag 標記的是 Math，果不其然。
-
 # 題目資訊
 
 - 名稱：Reverse Integer
@@ -164,4 +160,4 @@ public:
 
 # 參考資料
 
-- pmg (2016-08-02), How to detect integer overflow in C/C++?, http://stackoverflow.com/questions/199333/how-to-detect-integer-overflow-in-c-c
+- pmg (2016-08-02), _How to detect integer overflow in C/C++?_, <http://stackoverflow.com/questions/199333/how-to-detect-integer-overflow-in-c-c>

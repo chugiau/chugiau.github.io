@@ -11,10 +11,6 @@ tags:
   - LeetCode
 ---
 
-# 摘要
-
-毫無反應，就只是個漢明距離（Hamming Distance）。
-
 # 題目資訊
 
 - 名稱：Hamming Distance
@@ -103,5 +99,7 @@ public:
     }
 };
 ```
+
+# 後記
 
 有更快速的 bit manipulation 實作方法，可以參考 LeetCode 上其他人的 Solutions。

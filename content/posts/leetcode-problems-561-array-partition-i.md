@@ -13,10 +13,6 @@ tags:
   - LeetCode
 ---
 
-# 摘要
-
-此篇文章記錄筆者解 LeetCode Problem 561 Array Partition I 的過程。這題雖然名稱是 Array Partition，但實際在解的過程根本就沒用到 partition 的概念，可能為求時間複雜度最快佳的解法得用 array partition。總之，這題做得有點不知所以然，莫名其妙......
-
 # 題目資訊
 
 - 名稱：Array Partition I
@@ -101,3 +97,6 @@ public:
 };
 ```
 
+# 後記
+
+這題雖然名稱是 Array Partition，但實際在解的過程根本就沒用到 partition 的概念，可能為求時間複雜度最快佳的解法得用 array partition。總之，這題做得有點不知所以然，可能是哪邊沒想清楚。

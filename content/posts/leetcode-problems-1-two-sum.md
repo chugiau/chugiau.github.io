@@ -11,10 +11,6 @@ tags:
   - LeetCode
 ---
 
-# 摘要
-
-此文是筆者在解 LeetCode Problems: 1. Two Sum 的過程。雖然這題很簡單，但看了 LeetCode 的 tags（相當於提示）才知道可以用 Hash Table 之類的關聯式容器來進一步優化成 O(n)。
-
 # 題目資訊
 
 - 名稱：Two Sum
