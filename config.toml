@@ -2,16 +2,23 @@ baseURL = "https://chugiau.ninja/"
 languageCode = "zh-tw"
 defaultContentLanguage = "zh-tw"
 title = "KÁN Chúgiâu"
-copyright = "© KÁN Chúgiâu"
-theme = "archie"
+theme = "PaperMod"
+
+timeout = 30000
+enableInlineShortcodes = true
+enableRobotsTXT = true
+enableEmoji = true
 
 hasCJKLanguage = true
 
-# pygmentsstyle = "monokai"
-# pygmentscodefences = true
-# pygmentscodefencesguesssyntax = true
+paginate = 5
 
-paginate = 7
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[minify]
+  disableXML = true
+  minifyOutput = true
 
 [related]
   includeNewer = true
@@ -40,44 +47,94 @@ paginate = 7
   series = 'series'
   tag = 'tags'
 
+[menus]
+  [[menus.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 20
+  [[menus.main]]
+    identifier = "series"
+    name = "Series"
+    url = "/series/"
+    weight = 25
+  [[menus.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 30
+  [[menus.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 40
+  [[menus.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 50
+  [[menus.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 60
+
 [params]
-  mode = "toggle"
-  useCDN = false
-  subtitle = ""
-  [[params.social]]
-    name = "GitHub"
-    icon = "github"
+  description = "A game developer's blog."
+  author = "KÁN Chúgiâu"
+  defaultTheme = "light"
+  disableThemeToggle = false
+  showReadingTime = true
+  showShareButtons = false
+  showPostNavLinks = true
+  showBreadCrumbs = true
+  showCodeCopyButtons = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hideMeta = false
+  hideSummary = false
+  showToc = true
+  tocOpen = false
+  [params.profileMode]
+    enabled = true
+    subtitle = "No Game No Life"
+    [[params.profileMode.buttons]]
+      name = "Posts"
+      url = "/posts"
+    [[params.profileMode.buttons]]
+      name = "Tags"
+      url = "/tags"
+  [[params.socialIcons]]
+    name = "github"
     url = "https://github.com/chugiau"
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:kan@chugiau.ninja"
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
 
-[[menu.main]]
-  name = "Home"
-  url = "/"
-  weight = 10
-
-[[menu.main]]
-  name = "Posts"
-  url = "/posts"
-  weight = 20
-
-[[menu.main]]
-  name = "Series"
-  url = "/series"
-  weight = 25
-
-[[menu.main]]
-  name = "Categories"
-  url = "/categories"
-  weight = 30
-
-[[menu.main]]
-  name = "Tags"
-  url = "/tags"
-  weight = 40
-
-[[menu.main]]
-  name = "About"
-  url = "/about"
-  weight = 50
+[privacy]
+  [privacy.vimeo]
+    disable = true
+    simple = true
+  [privacy.twitter]
+    disable = true
+    enableDNT = true
+    simple = true
+    disableInlineCSS = true
+  [privacy.insagram]
+    disable = true
+    simple = true
+  [youtube]
+    disable = true
+    privacyEnhanced = true
 
 [markup]
   [markup.highlight]
@@ -87,27 +144,11 @@ paginate = 7
     hl_lines = ''
     lineAnchors = ''
     lineNoStart = 1
-    lineNos = true
+    lineNos = false
     lineNumbersInTable = true
     noClasses = true
     style = 'native'
     tabWidth = 4
   [markup.goldmark]
-    [markup.goldmark.extensions]
-      definitionList = true
-      footnote = true
-      linkify = true
-      strikethrough = true
-      table = true
-      taskList = true
-      typographer = true
     [markup.goldmark.renderer]
-      hardWraps = false
       unsafe = true
-      xhtml = false
-    [markup.goldmark.parser]
-      autoHeadingID = true
-      autoHeadingIDType = 'github'
-      [markup.goldmark.parser.attribute]
-        block = false
-        title = true
