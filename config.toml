@@ -85,6 +85,7 @@ paginate = 5
   hideSummary = false
   showToc = true
   tocOpen = false
+  disableHLJS = true
   images = ["img/icon.png"]
   [[params.socialIcons]]
     name = "github"
@@ -127,7 +128,6 @@ paginate = 5
       name = "Tags"
       url = "/tags"
 
-
 [privacy]
   [privacy.vimeo]
     disable = true
@@ -156,7 +156,7 @@ paginate = 5
     lineNos = true
     lineNumbersInTable = true
     noClasses = true
-    style = "native"
+    style = "nord"
     tabWidth = 4
   [markup.goldmark]
     [markup.goldmark.renderer]

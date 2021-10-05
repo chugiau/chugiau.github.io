@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+TC:wght@400;700&display=swap");
+
+@font-face {
+  font-family: system-ui-sans;
+  src        :
+    local("Noto Sans CJK TC"),
+    local("Noto Sans TC");
+}
+
+@font-face {
+  font-family: system-ui-serif;
+  src        :
+    local("Noto Serif CJK TC"),
+    local("Noto Serif TC");
+}
+
+@font-face {
+  font-family: system-monospace;
+  font-style: normal;
+  font-weight: 400;
+  src        :
+    local("JetBrains Mono Regular"),
+    local("Fira Code Regular"),
+    local("Cascadia Code Regular"),
+    local("Cascadia Mono Regular"),
+    local("SF Mono Regular"),
+    local("Source Code Pro");
+}
+
+@font-face {
+  font-family: system-monospace;
+  font-style : italic;
+  font-weight: 400;
+  src        :
+    local("JetBrains Mono Italic"),
+    local("Fira Code Regular"),
+    local("Cascadia Code Italic"),
+    local("Cascadia Mono Italic"),
+    local("SF Mono Italic"),
+    local("Source Code Pro Italic");
+}
+
+@font-face {
+  font-family: system-monospace;
+  font-style : normal;
+  font-weight: 700;
+  src        :
+    local("JetBrains Mono Bold"),
+    local("Fira Code Bold"),
+    local("Cascadia Code Bold"),
+    local("Cascadia Mono Bold"),
+    local("SF Mono Bold"),
+    local("Source Code Pro Bold");
+}
+
+@font-face {
+  font-family: system-monospace;
+  font-style : italic;
+  font-weight: 700;
+  src        :
+    local("JetBrains Mono Bold Italic"),
+    local("Fira Code Bold Italic"),
+    local("Cascadia Code Bold Italic"),
+    local("Cascadia Mono Bold Italic"),
+    local("SF Mono Bold Italic"),
+    local("Source Code Pro Bold Italic");
+}
+
+footer,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.toc {
+  font-family: system-ui-sans, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.post-meta,
+.post-content {
+  font-family: system-ui-serif, -apple-system, BlinkMacSystemFont, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+pre, code {
+  font-family: system-monospace, Menlo, Consolas, monospace;
+}
