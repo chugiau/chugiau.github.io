@@ -78,6 +78,8 @@ h6,
   font-family: system-ui-sans, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+.entry-content,
+.entry-footer,
 .post-meta,
 .post-content {
   font-family: system-ui-serif, -apple-system, BlinkMacSystemFont, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
