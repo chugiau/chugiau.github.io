@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Unity on KÁN Chúgiâu</title>
+    <link>https://chugiau.ninja/tags/unity/</link>
+    <description>Recent content in Unity on KÁN Chúgiâu</description>
+    <image>
+      <url>https://chugiau.ninja/img/icon.png</url>
+      <link>https://chugiau.ninja/img/icon.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 04 Apr 2018 12:51:06 +0000</lastBuildDate><atom:link href="https://chugiau.ninja/tags/unity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google Play Services IncompatibleClassChangeError</title>
+      <link>https://chugiau.ninja/posts/google-play-services-incompatibleclasschangeerror/</link>
+      <pubDate>Wed, 04 Apr 2018 12:51:06 +0000</pubDate>
+      
+      <guid>https://chugiau.ninja/posts/google-play-services-incompatibleclasschangeerror/</guid>
+      <description>之前工作在接第三方登入 SDK 時，遇到 GoogleApiClient.connect()&#39; was expected to be of type interface but was found to be virtual 這個錯誤。 原因 查一查發現是第三方登入 SDK 使用的 Google Play Services 是 7.8.* 以下的版本，而我是引用 8.* 以</description>
+    </item>
+    
+    <item>
+      <title>Unity 5 AssetBundle 基礎</title>
+      <link>https://chugiau.ninja/posts/unity-5-assetbundle-fundamentals/</link>
+      <pubDate>Wed, 21 Jun 2017 08:25:32 +0000</pubDate>
+      
+      <guid>https://chugiau.ninja/posts/unity-5-assetbundle-fundamentals/</guid>
+      <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;p&gt;一直以來，Unity 的 &lt;code&gt;AssetBundle&lt;/code&gt; 機制與不透明的資訊一直為人所詬病（社群論壇有些批評，例如 asset 序列化管理架構、機制本身就不良，來源就不附上了），以往大部分的資訊都只是瞎子摸象試出來的結果，大都未經 Unity 官方證實。
+直到 Unity 4、5 開始，特別是從 Unity 5.x 開始，官方才比較願意公開詳細地說明 Unity &lt;code&gt;AssetBundle&lt;/code&gt;、檔案資源系統及 &lt;code&gt;Resources&lt;/code&gt; 機制。&lt;/p&gt;
+&lt;p&gt;包括我在內，相信有不少 Unity 開發人員踩了不少 &lt;code&gt;AssetBundle&lt;/code&gt; 相關的地雷，因此寫了這篇來記錄 &lt;code&gt;AssetBundle&lt;/code&gt; 相關的基礎知識與細節。這篇主要是以 Unity 官方的 AssetBundle fundamentals 主題文章為主，加上一些自身開發經歷與參考。&lt;/p&gt;
+&lt;h1 id=&#34;assetbundle-概觀&#34;&gt;&lt;code&gt;AssetBundle&lt;/code&gt; 概觀&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;AssetBundle&lt;/code&gt; 是一款 Unity 的檔案資源系統，目的是為了讓資料交付可以相容於 Unity 自身的序列化系統。因為 Unity 本身的檔案資源處理機制，導致沒辦法直接使用檔案，原始 asset 檔與 Unity 最終在使用的 asset 是不同的。
+次要目的是縮減最終發布的 asset 大小，縮減執行期記憶體用量，可根據目標裝置給予最適合的內容（例如根據不同裝置選擇貼圖壓縮格式）等。&lt;/p&gt;
+&lt;h1 id=&#34;assetbundle-內部儲存結構&#34;&gt;&lt;code&gt;AssetBundle&lt;/code&gt; 內部儲存結構&lt;/h1&gt;
+&lt;p&gt;一包 &lt;code&gt;AssetBundle&lt;/code&gt; 由兩個部分組成。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;檔頭 (header)&lt;/li&gt;
+&lt;li&gt;資料段 (data segment)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;assetbundle-header&#34;&gt;&lt;code&gt;AssetBundle&lt;/code&gt; Header&lt;/h2&gt;
+&lt;p&gt;檔頭由 Unity 在建置 &lt;code&gt;AssetBundle&lt;/code&gt; 時產生，記錄了這包 &lt;code&gt;AssetBundle&lt;/code&gt; 的 ID、壓縮格式、manifest 等資訊。&lt;/p&gt;
+&lt;h3 id=&#34;header-manifest&#34;&gt;Header Manifest&lt;/h3&gt;
+&lt;p&gt;這裡的 manifest 是指檔頭的 manifest，不是指 &lt;code&gt;AssetBundle&lt;/code&gt; 建置出來的 manifest。&lt;/p&gt;
+&lt;p&gt;Manifest 是一張查找表，以 &lt;code&gt;UnityEngine.Object&lt;/code&gt; 名稱為主鍵，值為此 &lt;code&gt;UnityEngine.Object&lt;/code&gt; 指向資料段的索引。官方指出大部分的平台都是用 C++ STL &lt;code&gt;std::multimap&lt;/code&gt; 來實作，因此一個 &lt;code&gt;UnityEngine.Object&lt;/code&gt; 可能會有很多個資料段。官方也說明演算法會根據不同平台來選擇以利最佳化，大都是使用各種平衡搜尋樹 (balanced search tree)。例如在 Windows、OSX 及 iOS 會採用紅黑樹 (red-black tree)。因此在建構 manifest 時，消耗的時間不是線性，會比線性還久。&lt;/p&gt;
+&lt;h2 id=&#34;assetbundle-data-segment&#34;&gt;&lt;code&gt;AssetBundle&lt;/code&gt; Data Segment&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;AssetBundle&lt;/code&gt; 資料段保存了 Unity 序列化 asset 後的原始資料。若資料段是被壓縮的，則會根據壓縮演算法來選擇要如何解壓縮這些資料段。例如 LZMA 壓縮會蒐集所有的資料段後才解壓縮，這代表了 LZMA 得解壓縮一整包 &lt;code&gt;AssetBundle&lt;/code&gt; 才能取出裡面的 &lt;code&gt;UnityEngine.Object&lt;/code&gt;，即便你只是想要取出某一個 &lt;code&gt;UnityEngine.Object&lt;/code&gt;。而 Unity 5.3 之後新增的 LZ4 則是個別壓縮 &lt;code&gt;UnityEngine.Object&lt;/code&gt;，允許獨立解壓縮取出一個，不用解壓縮一整包才能取出 &lt;code&gt;UnityEngine.Object&lt;/code&gt;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Unity Resources 系統的最佳實務做法</title>
+      <link>https://chugiau.ninja/posts/best-practices-for-unity-resources/</link>
+      <pubDate>Sun, 18 Jun 2017 05:47:33 +0000</pubDate>
+      
+      <guid>https://chugiau.ninja/posts/best-practices-for-unity-resources/</guid>
+      <description>&lt;h1 id=&#34;resources-的最佳做法&#34;&gt;Resources 的最佳做法&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;別用 Resources&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;別用 Resources&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;別用 Resources&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;因為很重要，所以要講三次。為什麼呢？理由有三。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;細粒度的記憶體控管會更困難。&lt;/li&gt;
+&lt;li&gt;不當使用 Resources 資料夾會導致 app 啟動時間、建置時間更久。這問題在 Resources 檔案愈多，愈是明顯，尤其是規格比較差的行動裝置。app 在 splash screen 前黑畫面太久的其中一個原因正是這一點。&lt;/li&gt;
+&lt;li&gt;Resources 內的 assets 無法動態下載更新，也沒辦法處理 asset 變體。例如貼圖有分 sd、hd 版。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Unity 的程式開發人員，從 Unity 5 開始，應該要發展一套能夠方便使用 AssetBundle 的系統，如此便能不再倚賴 Resources。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

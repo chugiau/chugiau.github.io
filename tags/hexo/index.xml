@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hexo on KÁN Chúgiâu</title>
+    <link>https://chugiau.ninja/tags/hexo/</link>
+    <description>Recent content in Hexo on KÁN Chúgiâu</description>
+    <image>
+      <url>https://chugiau.ninja/img/icon.png</url>
+      <link>https://chugiau.ninja/img/icon.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Mon, 21 Nov 2016 15:27:59 +0000</lastBuildDate><atom:link href="https://chugiau.ninja/tags/hexo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hexo 插件載入地雷</title>
+      <link>https://chugiau.ninja/posts/hexo-plugins-trap/</link>
+      <pubDate>Mon, 21 Nov 2016 15:27:59 +0000</pubDate>
+      
+      <guid>https://chugiau.ninja/posts/hexo-plugins-trap/</guid>
+      <description>&lt;h1 id=&#34;摘要&#34;&gt;摘要&lt;/h1&gt;
+&lt;p&gt;剛開始學習如何使用 hexo 弄個靜態部落格，也弄了個網域。而在使用插件後，就發生災難了，無法 deploy。此文是記錄為什麼會遇到此問題，以及記錄如何處理。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

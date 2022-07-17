@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Windows on KÁN Chúgiâu</title>
+    <link>https://chugiau.ninja/tags/windows/</link>
+    <description>Recent content in Windows on KÁN Chúgiâu</description>
+    <image>
+      <url>https://chugiau.ninja/img/icon.png</url>
+      <link>https://chugiau.ninja/img/icon.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sun, 21 Nov 2021 11:46:53 +0800</lastBuildDate><atom:link href="https://chugiau.ninja/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在 Windows 上安裝 Oh My Posh 替換掉 PowerShell prompt 的樣式</title>
+      <link>https://chugiau.ninja/posts/install-oh-my-posh-on-windows/</link>
+      <pubDate>Sun, 21 Nov 2021 11:46:53 +0800</pubDate>
+      
+      <guid>https://chugiau.ninja/posts/install-oh-my-posh-on-windows/</guid>
+      <description>記錄使用 Oh My Posh 這套在 Windows 上常用的命令列佈景主題引擎，取代掉 Windows 系統內建醜醜的外觀。 簡介 Oh My Posh 是一套在 Windows 平台上常用的命令列佈景引擎，可以改顏色、自</description>
+    </item>
+    
+  </channel>
+</rss>

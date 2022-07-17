@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on KÁN Chúgiâu</title>
+    <link>https://chugiau.ninja/tags/</link>
+    <description>Recent content in Tags on KÁN Chúgiâu</description>
+    <image>
+      <url>https://chugiau.ninja/img/icon.png</url>
+      <link>https://chugiau.ninja/img/icon.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sun, 21 Nov 2021 11:46:53 +0800</lastBuildDate><atom:link href="https://chugiau.ninja/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShell</title>
+      <link>https://chugiau.ninja/tags/powershell/</link>
+      <pubDate>Sun, 21 Nov 2021 11:46:53 +0800</pubDate>
+      
+      <guid>https://chugiau.ninja/tags/powershell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>https://chugiau.ninja/tags/productivity/</link>
+      <pubDate>Sun, 21 Nov 2021 11:46:53 +0800</pubDate>
+      
+      <guid>https://chugiau.ninja/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>https://chugiau.ninja/tags/windows/</link>
+      <pubDate>Sun, 21 Nov 2021 11:46:53 +0800</pubDate>
+      
+      <guid>https://chugiau.ninja/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://chugiau.ninja/tags/python/</link>
+      <pubDate>Sat, 03 Nov 2018 22:05:01 +0000</pubDate>
+      
+      <guid>https://chugiau.ninja/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>virtualenv</title>
+      <link>https://chugiau.ninja/tags/virtualenv/</link>
+      <pubDate>Sat, 03 Nov 2018 22:05:01 +0000</pubDate>
+      
+      <guid>https://chugiau.ninja/tags/virtualenv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Android</title>
+      <link>https://chugiau.ninja/tags/android/</link>
+      <pubDate>Wed, 04 Apr 2018 12:51:06 +0000</pubDate>
+      
+      <guid>https://chugiau.ninja/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google Play Services</title>
+      <link>https://chugiau.ninja/tags/google-play-services/</link>
+      <pubDate>Wed, 04 Apr 2018 12:51:06 +0000</pubDate>
+      
+      <guid>https://chugiau.ninja/tags/google-play-services/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://chugiau.ninja/tags/java/</link>
+      <pubDate>Wed, 04 Apr 2018 12:51:06 +0000</pubDate>
+      
+      <guid>https://chugiau.ninja/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unity</title>
+      <link>https://chugiau.ninja/tags/unity/</link>
+      <pubDate>Wed, 04 Apr 2018 12:51:06 +0000</pubDate>
+      
+      <guid>https://chugiau.ninja/tags/unity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AssetBundle</title>
+      <link>https://chugiau.ninja/tags/assetbundle/</link>
+      <pubDate>Wed, 21 Jun 2017 08:25:32 +0000</pubDate>
+      
+      <guid>https://chugiau.ninja/tags/assetbundle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unity 5</title>
+      <link>https://chugiau.ninja/tags/unity-5/</link>
+      <pubDate>Wed, 21 Jun 2017 08:25:32 +0000</pubDate>
+      
+      <guid>https://chugiau.ninja/tags/unity-5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Resources</title>
+      <link>https://chugiau.ninja/tags/resources/</link>
+      <pubDate>Sun, 18 Jun 2017 05:47:33 +0000</pubDate>
+      
+      <guid>https://chugiau.ninja/tags/resources/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LeetCode</title>
+      <link>https://chugiau.ninja/tags/leetcode/</link>
+      <pubDate>Tue, 09 May 2017 00:44:05 +0000</pubDate>
+      
+      <guid>https://chugiau.ninja/tags/leetcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Redmine</title>
+      <link>https://chugiau.ninja/tags/redmine/</link>
+      <pubDate>Fri, 14 Apr 2017 21:45:23 +0000</pubDate>
+      
+      <guid>https://chugiau.ninja/tags/redmine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hexo</title>
+      <link>https://chugiau.ninja/tags/hexo/</link>
+      <pubDate>Mon, 21 Nov 2016 15:27:59 +0000</pubDate>
+      
+      <guid>https://chugiau.ninja/tags/hexo/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

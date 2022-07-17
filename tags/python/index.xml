@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Python on KÁN Chúgiâu</title>
+    <link>https://chugiau.ninja/tags/python/</link>
+    <description>Recent content in Python on KÁN Chúgiâu</description>
+    <image>
+      <url>https://chugiau.ninja/img/icon.png</url>
+      <link>https://chugiau.ninja/img/icon.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sat, 03 Nov 2018 22:05:01 +0000</lastBuildDate><atom:link href="https://chugiau.ninja/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>安裝並使用 Python virtualenv</title>
+      <link>https://chugiau.ninja/posts/install-and-use-python-virtualenv/</link>
+      <pubDate>Sat, 03 Nov 2018 22:05:01 +0000</pubDate>
+      
+      <guid>https://chugiau.ninja/posts/install-and-use-python-virtualenv/</guid>
+      <description>簡介 virtualenv 是一套 Python 常用的虛擬環境工具，可以用來隔離環境所需的套件。 案例一，避免套件版本衝突 你的專案 Foo 是使用 Flask，另一項專案 Bar 是使用 Djan</description>
+    </item>
+    
+  </channel>
+</rss>

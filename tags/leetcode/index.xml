@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>LeetCode on KÁN Chúgiâu</title>
+    <link>https://chugiau.ninja/tags/leetcode/</link>
+    <description>Recent content in LeetCode on KÁN Chúgiâu</description>
+    <image>
+      <url>https://chugiau.ninja/img/icon.png</url>
+      <link>https://chugiau.ninja/img/icon.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Tue, 09 May 2017 00:44:05 +0000</lastBuildDate><atom:link href="https://chugiau.ninja/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode Problems: 461. Hamming Distance</title>
+      <link>https://chugiau.ninja/posts/leetcode-problems-461-hamming-distance/</link>
+      <pubDate>Tue, 09 May 2017 00:44:05 +0000</pubDate>
+      
+      <guid>https://chugiau.ninja/posts/leetcode-problems-461-hamming-distance/</guid>
+      <description>&lt;h1 id=&#34;題目資訊&#34;&gt;題目資訊&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;名稱：Hamming Distance&lt;/li&gt;
+&lt;li&gt;分類：Algorithms&lt;/li&gt;
+&lt;li&gt;編號：461&lt;/li&gt;
+&lt;li&gt;難度：Easy&lt;/li&gt;
+&lt;li&gt;標籤：Bit Manipulation&lt;/li&gt;
+&lt;li&gt;網址：https://leetcode.com/problems/hamming-distance&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>LeetCode Problems: 561. Array Partition I</title>
+      <link>https://chugiau.ninja/posts/leetcode-problems-561-array-partition-i/</link>
+      <pubDate>Sun, 07 May 2017 18:09:27 +0000</pubDate>
+      
+      <guid>https://chugiau.ninja/posts/leetcode-problems-561-array-partition-i/</guid>
+      <description>&lt;h1 id=&#34;題目資訊&#34;&gt;題目資訊&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;名稱：Array Partition I&lt;/li&gt;
+&lt;li&gt;分類：Algorithms&lt;/li&gt;
+&lt;li&gt;編號：561&lt;/li&gt;
+&lt;li&gt;難度：Easy&lt;/li&gt;
+&lt;li&gt;標籤：Array&lt;/li&gt;
+&lt;li&gt;網址：https://leetcode.com/problems/array-partition-i&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>LeetCode Problems: 535. Encode and Decode TinyURL</title>
+      <link>https://chugiau.ninja/posts/leetcode-problems-535-encode-and-decode-tinyurl/</link>
+      <pubDate>Sun, 07 May 2017 12:26:31 +0000</pubDate>
+      
+      <guid>https://chugiau.ninja/posts/leetcode-problems-535-encode-and-decode-tinyurl/</guid>
+      <description>&lt;h1 id=&#34;摘要&#34;&gt;摘要&lt;/h1&gt;
+&lt;p&gt;這篇是筆者解短網址編碼、解碼的過程。這題是之前 LeetCode 的 System Design 題目（&lt;a href=&#34;https://leetcode.com/problems/design-tinyurl&#34;&gt;編號 534&lt;/a&gt;），也就是設計將一般網址轉成短網址的服務。但這題的寫 code 題型其實設計上有瑕疵，內文將會說明。&lt;/p&gt;
+&lt;h1 id=&#34;題目資訊&#34;&gt;題目資訊&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;名稱：Encode and Decode TinyURL&lt;/li&gt;
+&lt;li&gt;分類：Algorithms&lt;/li&gt;
+&lt;li&gt;編號：535&lt;/li&gt;
+&lt;li&gt;難度：Medium&lt;/li&gt;
+&lt;li&gt;標籤：Hash Table, Math&lt;/li&gt;
+&lt;li&gt;網址：https://leetcode.com/problems/encode-and-decode-tinyurl&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>LeetCode Problems: 9. Palindrome Number</title>
+      <link>https://chugiau.ninja/posts/leetcode-problems-9-palindrome-number/</link>
+      <pubDate>Sun, 07 May 2017 00:34:07 +0000</pubDate>
+      
+      <guid>https://chugiau.ninja/posts/leetcode-problems-9-palindrome-number/</guid>
+      <description>&lt;h1 id=&#34;題目資訊&#34;&gt;題目資訊&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;名稱：Palindrome Number&lt;/li&gt;
+&lt;li&gt;分類：Algorithms&lt;/li&gt;
+&lt;li&gt;編號：9&lt;/li&gt;
+&lt;li&gt;難度：Easy&lt;/li&gt;
+&lt;li&gt;標籤：Math&lt;/li&gt;
+&lt;li&gt;網址：https://leetcode.com/problems/palindrome-number&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>LeetCode Problems: 7. Reverse Integer</title>
+      <link>https://chugiau.ninja/posts/leetcode-problems-7-reverse-integer/</link>
+      <pubDate>Mon, 01 May 2017 00:52:17 +0000</pubDate>
+      
+      <guid>https://chugiau.ninja/posts/leetcode-problems-7-reverse-integer/</guid>
+      <description>&lt;h1 id=&#34;題目資訊&#34;&gt;題目資訊&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;名稱：Reverse Integer&lt;/li&gt;
+&lt;li&gt;分類：Algorithms&lt;/li&gt;
+&lt;li&gt;編號：7&lt;/li&gt;
+&lt;li&gt;難度：Easy&lt;/li&gt;
+&lt;li&gt;標籤：Math&lt;/li&gt;
+&lt;li&gt;網址：https://leetcode.com/problems/reverse-integer&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>LeetCode Problems: 1. Two Sum</title>
+      <link>https://chugiau.ninja/posts/leetcode-problems-1-two-sum/</link>
+      <pubDate>Sun, 30 Apr 2017 12:57:42 +0000</pubDate>
+      
+      <guid>https://chugiau.ninja/posts/leetcode-problems-1-two-sum/</guid>
+      <description>&lt;h1 id=&#34;題目資訊&#34;&gt;題目資訊&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;名稱：Two Sum&lt;/li&gt;
+&lt;li&gt;分類：Algorithms&lt;/li&gt;
+&lt;li&gt;編號：1&lt;/li&gt;
+&lt;li&gt;難度：Easy&lt;/li&gt;
+&lt;li&gt;標籤：Array, Hash Table&lt;/li&gt;
+&lt;li&gt;網址：https://leetcode.com/problems/two-sum&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on KÁN Chúgiâu</title>
+    <link>https://chugiau.ninja/categories/</link>
+    <description>Recent content in Categories on KÁN Chúgiâu</description>
+    <image>
+      <url>https://chugiau.ninja/img/icon.png</url>
+      <link>https://chugiau.ninja/img/icon.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sun, 21 Nov 2021 11:46:53 +0800</lastBuildDate><atom:link href="https://chugiau.ninja/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Technical</title>
+      <link>https://chugiau.ninja/categories/technical/</link>
+      <pubDate>Sun, 21 Nov 2021 11:46:53 +0800</pubDate>
+      
+      <guid>https://chugiau.ninja/categories/technical/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

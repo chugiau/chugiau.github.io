@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Resources on KÁN Chúgiâu</title>
+    <link>https://chugiau.ninja/tags/resources/</link>
+    <description>Recent content in Resources on KÁN Chúgiâu</description>
+    <image>
+      <url>https://chugiau.ninja/img/icon.png</url>
+      <link>https://chugiau.ninja/img/icon.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sun, 18 Jun 2017 05:47:33 +0000</lastBuildDate><atom:link href="https://chugiau.ninja/tags/resources/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unity Resources 系統的最佳實務做法</title>
+      <link>https://chugiau.ninja/posts/best-practices-for-unity-resources/</link>
+      <pubDate>Sun, 18 Jun 2017 05:47:33 +0000</pubDate>
+      
+      <guid>https://chugiau.ninja/posts/best-practices-for-unity-resources/</guid>
+      <description>&lt;h1 id=&#34;resources-的最佳做法&#34;&gt;Resources 的最佳做法&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;別用 Resources&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;別用 Resources&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;別用 Resources&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;因為很重要，所以要講三次。為什麼呢？理由有三。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;細粒度的記憶體控管會更困難。&lt;/li&gt;
+&lt;li&gt;不當使用 Resources 資料夾會導致 app 啟動時間、建置時間更久。這問題在 Resources 檔案愈多，愈是明顯，尤其是規格比較差的行動裝置。app 在 splash screen 前黑畫面太久的其中一個原因正是這一點。&lt;/li&gt;
+&lt;li&gt;Resources 內的 assets 無法動態下載更新，也沒辦法處理 asset 變體。例如貼圖有分 sd、hd 版。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Unity 的程式開發人員，從 Unity 5 開始，應該要發展一套能夠方便使用 AssetBundle 的系統，如此便能不再倚賴 Resources。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
