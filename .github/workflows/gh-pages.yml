@@ -22,7 +22,7 @@ jobs:
             ${{ runner.os }}-hugomod-
 
       - name: Build
-        uses: jakejarvis/hugo-build-action@0.101.0
+        uses: jakejarvis/hugo-build-action@v0.101.0
         with:
           args: --environment production
 
