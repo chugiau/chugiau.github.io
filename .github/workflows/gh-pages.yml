@@ -27,4 +27,4 @@ jobs:
       - name: Publish
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          path: ./public
+          folder: public
