@@ -5,6 +5,7 @@
     <link>https://chugiau.ninja/posts/</link>
     <description>Recent content in Posts on KÁN Chúgiâu</description>
     <image>
+      <title>KÁN Chúgiâu</title>
       <url>https://chugiau.ninja/img/icon.png</url>
       <link>https://chugiau.ninja/img/icon.png</link>
     </image>
@@ -55,37 +56,17 @@
       <guid>https://chugiau.ninja/posts/powershell-get-content/</guid>
       <description>&lt;p&gt;最近遇到一個 PowerShell 的陷阱，用 &lt;code&gt;Get-Content&lt;/code&gt; 讀檔時，不會保留換行符號。因為 &lt;code&gt;Get-Content&lt;/code&gt; 行為是單行回傳物件，多行回傳陣列，而不是單一字串。
 一種簡單的 EOL 保留方法是&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
-&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74&#34;&gt;1
-&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74&#34;&gt;2
-&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74&#34;&gt;3
-&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;Get-Content&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;&amp;lt;&lt;/span&gt;path&lt;span style=&#34;color:#eceff4&#34;&gt;&amp;gt;)&lt;/span&gt; -join &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ebcb8b&#34;&gt;`n&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;Get-Content&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;&amp;lt;&lt;/span&gt;path&lt;span style=&#34;color:#eceff4&#34;&gt;&amp;gt;)&lt;/span&gt; -join &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ebcb8b&#34;&gt;`n&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;# e.g.&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$content &lt;span style=&#34;color:#eceff4&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#81a1c1&#34;&gt;Get-Content&lt;/span&gt; C:&lt;span style=&#34;color:#eceff4&#34;&gt;\&lt;/span&gt;Users&lt;span style=&#34;color:#eceff4&#34;&gt;\&lt;/span&gt;Me&lt;span style=&#34;color:#eceff4&#34;&gt;\&lt;/span&gt;note&lt;span style=&#34;color:#eceff4&#34;&gt;.&lt;/span&gt;txt&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt; -join &lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ebcb8b&#34;&gt;`n&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;把它串回來即可。
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;把它串回來即可。
 另一種作法是改用 .NET Class，但稍嫌麻煩。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
-&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74&#34;&gt;1
-&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74&#34;&gt;2
-&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74&#34;&gt;3
-&lt;/span&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8fbcbb&#34;&gt;[System.IO.File]&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;::&lt;/span&gt;ReadAllText&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;file\to\path&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#8fbcbb&#34;&gt;System.IO.File&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;]::&lt;/span&gt;ReadAllText&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;file\to\path&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#616e87;font-style:italic&#34;&gt;# e.g.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$content &lt;span style=&#34;color:#eceff4&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#8fbcbb&#34;&gt;[System.IO.File]&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;::&lt;/span&gt;ReadAllText&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;C:\Users\Me\note.txt&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$content &lt;span style=&#34;color:#eceff4&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#eceff4&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#8fbcbb&#34;&gt;System.IO.File&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;]::&lt;/span&gt;ReadAllText&lt;span style=&#34;color:#eceff4&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a3be8c&#34;&gt;&amp;#34;C:\Users\Me\note.txt&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#eceff4&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -237,15 +218,6 @@
 &lt;li&gt;標籤：Array, Hash Table&lt;/li&gt;
 &lt;li&gt;網址：https://leetcode.com/problems/two-sum&lt;/li&gt;
 &lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>安裝 Redmine 3.3</title>
-      <link>https://chugiau.ninja/posts/redmine-installation/</link>
-      <pubDate>Fri, 14 Apr 2017 21:45:23 +0000</pubDate>
-      
-      <guid>https://chugiau.ninja/posts/redmine-installation/</guid>
-      <description>摘要 此文章將說明如何在 Ubuntu 安裝 Redmine，並使用 Let&amp;rsquo;s Encrypt 簽發 SSL 憑證以建立安全連線，但不包含安裝 MySQL，MySQL 必須自行先準備好。 Ubuntu + Nginx +</description>
     </item>
     
     <item>
