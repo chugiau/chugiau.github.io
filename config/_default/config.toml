@@ -71,13 +71,16 @@ paginate = 5
 [params]
   description = "A game developer's blog."
   author = "KÁN Chúgiâu"
-  defaultTheme = "light"
+  defaultTheme = "auto"
   disableThemeToggle = false
   showReadingTime = true
   showShareButtons = false
   showPostNavLinks = true
   showBreadCrumbs = true
   showCodeCopyButtons = true
+  showWordCount = true
+  showRssButtonInSectionTermList = true
+  useHugoToc = true
   disableSpecial1stPost = false
   disableScrollToTop = false
   comments = false
@@ -91,8 +94,14 @@ paginate = 5
     name = "github"
     url = "https://github.com/chugiau"
   [[params.socialIcons]]
+    name = "gitlab"
+    url = "https://gitlab.com/chugiau"
+  [[params.socialIcons]]
     name = "email"
     url = "mailto:kan@chugiau.ninja"
+  [[params.socialIcons]]
+    name = "rss"
+    url = "index.xml"
   [params.cover]
     hidden = false
     hiddenInList = false
@@ -137,25 +146,30 @@ paginate = 5
     enableDNT = true
     simple = true
     disableInlineCSS = true
-  [privacy.insagram]
+  [privacy.instagram]
     disable = true
     simple = true
   [privacy.youtube]
     disable = true
     privacyEnhanced = true
 
+[services]
+  [services.instagram]
+    disableInlineCSS = true
+  [services.twitter]
+    disableInlineCSS = true
+
 [markup]
-  defaultMarkdownHandler = "goldmark"
   [markup.highlight]
-    anchorLineNos = false
-    codeFences = true
-    guessSyntax = false
-    hl_lines = ''
-    lineAnchors = ''
-    lineNoStart = 1
-    lineNos = true
-    lineNumbersInTable = true
-    noClasses = true
+    #anchorLineNos = false
+    #codeFences = true
+    #guessSyntax = false
+    #hl_lines = ''
+    #lineAnchors = ''
+    #lineNoStart = 1
+    #lineNos = true
+    #lineNumbersInTable = true
+    #noClasses = true
     style = "nord"
     tabWidth = 4
   [markup.goldmark]
