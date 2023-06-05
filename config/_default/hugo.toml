@@ -4,7 +4,7 @@ defaultContentLanguage = "zh-tw"
 title = "KÁN Chúgiâu"
 theme = "PaperMod"
 
-timeout = 30000
+timeout = "30s"
 enableInlineShortcodes = true
 enableRobotsTXT = true
 enableEmoji = true
@@ -83,7 +83,7 @@ paginate = 5
   useHugoToc = true
   disableSpecial1stPost = false
   disableScrollToTop = false
-  comments = false
+  comments = true
   hideMeta = false
   hideSummary = false
   showToc = true
