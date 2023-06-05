@@ -138,20 +138,18 @@ paginate = 5
       url = "/tags"
 
 [privacy]
-  [privacy.vimeo]
+  [privacy.disqus]
     disable = true
-    simple = true
-  [privacy.twitter]
+  [privacy.googleAnalytics]
     disable = true
-    enableDNT = true
-    simple = true
-    disableInlineCSS = true
   [privacy.instagram]
     disable = true
-    simple = true
+  [privacy.twitter]
+    disable = true
   [privacy.youtube]
     disable = true
-    privacyEnhanced = true
+  [privacy.vimeo]
+    disable = true
 
 [services]
   [services.instagram]
