@@ -4,7 +4,8 @@ name: Deploy Hugo site to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches:
+      - main
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -16,7 +17,7 @@ permissions:
 env:
   HUGO_ENV: production
   HUGO_VERSION: "0.118.2"
-  GO_VERSION: "1.20.5"
+  GO_VERSION: "1.21.0"
   NODE_VERSION: "18.15.0"
   TINA_CLIENT_ID: ${{ vars.TINA_CLIENT_ID }}
   TINA_TOKEN: ${{ vars.TINA_TOKEN }}
@@ -31,8 +32,26 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - uses: actions/cache@v3
+        id: cache-hugo
+        with:
+          path: /usr/local/bin/hugo
+          key: ${{ runner.os }}-hugo-${{ hashFiles('/usr/local/bin/hugo') }}
+          restore-keys: |
+            ${{ runner.os }}-hugo
+
+      - uses: actions/cache@v3
+        id: cache-go
+        with:
+          path: /usr/local/go/bin/go
+          key: ${{ runner.os }}-go-exec-${{ hashFiles('/usr/local/go/bin/go') }}
+          restore-keys: |
+            ${{ runner.os }}-go-exec
 
       - name: Install Hugo
+        if: steps.cache-hugo.outputs.cache-hit != 'true'
         run: |
           curl -LO "https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.tar.gz"
           tar -xvf hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.tar.gz
@@ -40,7 +59,17 @@ jobs:
           rm hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.tar.gz
           hugo version
 
+      - uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cache/go-build
+            ~/go/pkg/mod
+          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-go-
+
       - name: Install Go
+        if: steps.cache-go.outputs.cache-hit != 'true'
         run: |
           curl -LO "https://dl.google.com/go/go${{ env.GO_VERSION }}.linux-amd64.tar.gz"
           sudo tar -C /usr/local -xzf go${{ env.GO_VERSION }}.linux-amd64.tar.gz
@@ -54,11 +83,18 @@ jobs:
       - name: Install npm dependencies
         run: npm install
 
+      - uses: actions/cache@v3
+        with:
+          path: /tmp/hugo_cache
+          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-hugomod-
+
       - name: Publish to GitHub Pages
         run: npm run build
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
         with:
           path: ./public
 
