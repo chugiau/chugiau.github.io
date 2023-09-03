@@ -1,30 +1,37 @@
+######################## default configuration ####################
+# The base URL of your site (required). This will be prepended to all relative URLs.
 baseURL = "https://chugiau.ninja/"
+# Title of your website (required).
 title = "Kcg's Blog"
-
+# Your theme name
 theme = "hugoplate"
-
+# Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
 timeZone = "Asia/Taipei"
 
 enableInlineShortcodes = true
 enableRobotsTXT = true
 enableEmoji = true
 
-paginate = 6
-summaryLength = 70
+# post pagination
+paginate = 6 # see https://gohugo.io/extras/pagination/
+# post excerpt
+summaryLength = 70 # see https://gohugo.io/content-management/excerpts/
 
 languageCode = "zh-tw"
 defaultContentLanguage = "zh-tw"
 
-# googleAnalytics = ""
-# disqusShortname = ""
+# google analytics
+# googleAnalytics = "" # see https://gohugo.io/templates/internal/#configure-google-analytics
+# disqus short name
+# disqusShortname = "" # we use disqus to show comments in blog posts . To install disqus please follow this tutorial https://portfolio.peter-baumgartner.net/2017/09/10/how-to-install-disqus-on-hugo/
 
 # disable language
 # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
 disableLanguages = [
-  "en"
-]
+  "en",
+] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
 
-hasCJKLanguage = true
+hasCJKLanguage = true #  If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
 
 
 ########################## Permalinks ############################
@@ -118,3 +125,38 @@ hasCJKLanguage = true
     baseName = "searchindex"
     isPlainText = true
     notAlternative = true
+
+
+    ############################# Plugins ##############################
+
+# CSS Plugins
+[[params.plugins.css]]
+  link = "plugins/swiper/swiper-bundle.css"
+[[params.plugins.css]]
+  link = "plugins/glightbox/glightbox.css"
+[[params.plugins.css]]
+  link = "plugins/font-awesome/v6/brands.css"
+[[params.plugins.css]]
+  link = "plugins/font-awesome/v6/solid.css"
+[[params.plugins.css]]
+  link = "plugins/font-awesome/v6/icons.css"
+
+# JS Plugins
+[[params.plugins.js]]
+  link = "js/search.js"
+[[params.plugins.js]]
+  link = "plugins/swiper/swiper-bundle.js"
+[[params.plugins.js]]
+  link = "plugins/glightbox/glightbox.js"
+[[params.plugins.js]]
+  link = "js/gallery-slider.js"
+[[params.plugins.js]]
+  link = "js/accordion.js"
+[[params.plugins.js]]
+  link = "js/tab.js"
+[[params.plugins.js]]
+  link = "js/modal.js"
+[[params.plugins.js]]
+  link = "plugins/cookie.js"
+[[params.plugins.js]]
+  link = "plugins/youtube-lite.js"
