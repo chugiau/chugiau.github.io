@@ -6,8 +6,8 @@ logo = "images/apple-touch-icon.png"
 logo_darkmode = "images/apple-touch-icon.png"
 # use `px` or `x` with logo_width, example: "100px".
 # Note: logo_width is not work with .svg file
-logo_width = "60px"
-logo_height = "60px"
+logo_width = "48px"
+logo_height = "48px"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 logo_webp = true
 # logo text will only show when logo is missing.
@@ -27,7 +27,7 @@ google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
 custom_script = ""
 # copyright
-#copyright = "© 2023 [Kán Chúgiâu](https://chugiau.ninja)"
+# copyright = "© 2023 [Kán Chúgiâu](https://chugiau.ninja)"
 
 # Preloader
 [preloader]
