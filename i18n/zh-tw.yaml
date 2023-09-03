@@ -1,0 +1,32 @@
+- id: home
+  translation: 首頁
+
+- id: read_more
+  translation: 更多
+
+- id: send
+  translation: 發送
+
+- id: related_posts
+  translation: 相關文章
+
+- id: categories
+  translation: 分類
+
+- id: tags
+  translation: 標籤
+
+- id: toc
+  translation: 目錄
+
+- id: share
+  translation: 分享
+
+- id: search_input_placeholder
+  translation: 搜尋文章...
+
+- id: no_results_for
+  translation: 找不到結果
+
+- id: empty_search_results_placeholder
+  translation: 輸入以搜尋...

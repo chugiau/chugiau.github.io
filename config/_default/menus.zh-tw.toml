@@ -1,0 +1,51 @@
+############# zh-tw navigation ##############
+
+# main menu
+[[main]]
+  name = "首頁"
+  url = "/"
+  weight = 1
+
+[[main]]
+  name = "部落格"
+  url = "blog/"
+  weight = 2
+
+[[main]]
+  name = "分類"
+  url = "categories/"
+  weight = 3
+
+[[main]]
+  name = "標籤"
+  url = "tags/"
+  weight = 4
+
+[[main]]
+  name = "關於"
+  url = "about/"
+  weight = 10
+
+[[main]]
+  name = "頁面"
+  weight = 11
+  hasChildren = true
+
+[[main]]
+  parent = "頁面"
+  name = "作者們"
+  url = "authors/"
+  weight = 9
+
+[[main]]
+  parent = "頁面"
+  name = "聯繫"
+  url = "contact/"
+  weight = 10
+
+
+# footer menu
+[[footer]]
+  name = "關於"
+  url = "about/"
+  weight = 1

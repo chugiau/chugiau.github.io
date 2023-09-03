@@ -1,28 +1,14 @@
+; https://editorconfig.org
+
 root = true
 
 [*]
 charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_style = space
+trim_trailing_whitespace = true
 insert_final_newline = true
 
 [*.md]
-indent_style = space
-indent_size = 2
-
-[*.{yml,yaml,toml,ini}]
-indent_style = space
-indent_size = 2
-
-[*.{html,xml}]
-indent_style = space
-indent_size = 2
-trim_trailing_whitespace = true
-
-[*.css]
-indent_style = space
-indent_size = 2
-trim_trailing_whitespace = true
-
-[*.js]
-indent_style = space
-indent_size = 2
-trim_trailing_whitespace = true
+trim_trailing_whitespace = false
