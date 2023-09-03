@@ -1,6 +1,6 @@
 #################### default parameters ################################
 # favicon
-favicon = "favicon.ico"
+favicon = "images/favicon.png"
 # logo
 logo = "images/apple-touch-icon.png"
 logo_darkmode = "images/apple-touch-icon.png"
