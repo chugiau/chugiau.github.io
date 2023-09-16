@@ -26,22 +26,22 @@
   url = "about/"
   weight = 10
 
-[[main]]
-  name = "頁面"
-  weight = 11
-  hasChildren = true
+# [[main]]
+#   name = "頁面"
+#   weight = 11
+#   hasChildren = true
 
-[[main]]
-  parent = "頁面"
-  name = "作者們"
-  url = "authors/"
-  weight = 9
+# [[main]]
+#   parent = "頁面"
+#   name = "作者們"
+#   url = "authors/"
+#   weight = 9
 
-[[main]]
-  parent = "頁面"
-  name = "聯繫"
-  url = "contact/"
-  weight = 10
+# [[main]]
+#   parent = "頁面"
+#   name = "聯繫"
+#   url = "contact/"
+#   weight = 10
 
 
 # footer menu
