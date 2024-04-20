@@ -5,7 +5,7 @@
         <!-- navbar brand/logo -->
         <a
           class="navbar-brand inline-block"
-          href="{{ site.BaseURL | relLangURL }}">
+          href="{{ site.Home.RelPermalink }}">
           {{ partial "logo" }}
         </a>
       </div>
@@ -19,7 +19,7 @@
                 {{ end }}
                 href="{{ if findRE `^#` .URL }}
                   {{ if not $.IsHome }}
-                    {{ site.BaseURL | relLangURL }}
+                    {{ site.Home.RelPermalink }}
                   {{ end }}{{ .URL }}
                 {{ else }}
                   {{ .URL | relLangURL }}
@@ -50,11 +50,7 @@
   <div class="border-border dark:border-darkmode-border border-t py-7">
     <div class="text-light dark:text-darkmode-light container text-center">
       <p>
-        {{- if site.Params.copyright }}
-          {{ site.Params.copyright | markdownify }}
-        {{- else }}
-          &copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Params.metadata.author }}</a>
-        {{- end }}
+        {{ site.Params.copyright | markdownify }}
       </p>
     </div>
   </div>

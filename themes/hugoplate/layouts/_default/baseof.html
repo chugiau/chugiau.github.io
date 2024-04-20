@@ -1,6 +1,9 @@
 <!doctype html>
 <html
   itemscope
+  class="{{- if not site.Params.theme_switcher -}}
+    {{- site.Params.theme_default -}}
+  {{- end -}}"
   lang="{{ site.LanguageCode | default `en-US` }}"
   itemtype="http://schema.org/WebPage">
   <head>
@@ -10,6 +13,7 @@
 
     <!-- style (always cache it) -->
     {{ partialCached "essentials/style.html" . }}
+
   </head>
 
   <body>
@@ -26,6 +30,10 @@
     {{ end }}
 
 
+    <!-- announcement -->
+    {{ partialCached "announcement.html" . }}
+
+
     <!-- header (don't cache it) -->
     {{ partial "essentials/header.html" . }}
     {{ partial "search-modal.html" (dict "Context" . ) }}
@@ -35,13 +43,11 @@
       {{ block "main" . }}{{ end }}
     </main>
 
-    <!-- cache partial only in production -->
-    {{ if hugo.IsProduction }}
-      {{ partialCached "essentials/footer.html" . }}
-      {{ partialCached "essentials/script.html" . }}
-    {{ else }}
-      {{ partial "essentials/footer.html" . }}
-      {{ partial "essentials/script.html" . }}
-    {{ end }}
+    <!-- footer -->
+    {{ partial "essentials/footer.html" . }}
+
+
+    <!-- script (always cache it) -->
+    {{ partialCached "essentials/script.html" . }}
   </body>
 </html>

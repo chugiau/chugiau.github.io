@@ -17,9 +17,9 @@ permissions:
 # Environment variables available to all jobs and steps in this workflow
 env:
   HUGO_ENV: production
-  HUGO_VERSION: "0.118.2"
-  GO_VERSION: "1.21.0"
-  NODE_VERSION: "18.15.0"
+  HUGO_VERSION: "0.124.1"
+  GO_VERSION: "1.22.2"
+  NODE_VERSION: "20.0.0"
   TINA_CLIENT_ID: ${{ vars.TINA_CLIENT_ID }}
   TINA_TOKEN: ${{ vars.TINA_TOKEN }}
 
@@ -28,16 +28,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           lfs: true
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'npm'
 
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         id: cache-hugo
         with:
           path: /usr/local/bin/hugo
@@ -45,7 +45,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-hugo
 
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         id: cache-go
         with:
           path: /usr/local/go/bin/go
@@ -62,7 +62,7 @@ jobs:
           rm hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.tar.gz
           hugo version
 
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         with:
           path: |
             ~/.cache/go-build
@@ -86,7 +86,7 @@ jobs:
       - name: Install npm dependencies
         run: npm install
 
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         with:
           path: /tmp/hugo_cache
           key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
@@ -97,7 +97,7 @@ jobs:
         run: npm run build
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
@@ -111,4 +111,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4

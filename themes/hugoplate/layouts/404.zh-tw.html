@@ -1,0 +1,25 @@
+{{ define "main" }}
+  <section class="section-sm text-center">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="sm:col-10 md:col-8 lg:col-6">
+          <span
+            class="text-[8rem] block font-bold text-dark dark:text-darkmode-dark">
+            404
+          </span>
+          <h1 class="h2 mb-4">找不到頁面</h1>
+          <div class="content">
+            <p>
+              您正在尋找的頁面可能已被刪除，但其名稱已被刪除已更改或暫時無法使用。
+            </p>
+          </div>
+          <a
+            href="{{ site.BaseURL | relLangURL }}"
+            class="btn btn-primary mt-8">
+            回到首頁
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

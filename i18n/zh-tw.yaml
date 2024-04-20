@@ -25,8 +25,17 @@
 - id: search_input_placeholder
   translation: 搜尋文章...
 
-- id: no_results_for
+- id: search_no_results
   translation: 找不到結果
 
-- id: empty_search_results_placeholder
+- id: search_initial_message
   translation: 輸入以搜尋...
+
+- id: search_navigate
+  translation: 導覽
+
+- id: search_select
+  translation: 選擇
+
+- id: search_close
+  translation: 關閉
