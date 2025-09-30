@@ -1,41 +1,14 @@
-- id: home
-  translation: 首頁
-
-- id: read_more
-  translation: 更多
-
-- id: send
-  translation: 發送
-
-- id: related_posts
-  translation: 相關文章
-
-- id: categories
-  translation: 分類
-
-- id: tags
-  translation: 標籤
-
-- id: toc
-  translation: 目錄
-
-- id: share
-  translation: 分享
-
-- id: search_input_placeholder
-  translation: 搜尋文章...
-
-- id: search_no_results
-  translation: 找不到結果
-
-- id: search_initial_message
-  translation: 輸入以搜尋...
-
-- id: search_navigate
-  translation: 導覽
-
-- id: search_select
-  translation: 選擇
-
-- id: search_close
-  translation: 關閉
+home: 首頁
+read_more: 更多
+send: 發送
+related_posts: 相關文章
+categories: 分類
+tags: 標籤
+toc: 目錄
+share: 分享
+search_input_placeholder: 搜尋文章...
+search_no_results: 找不到結果
+search_initial_message: 輸入以搜尋...
+search_navigate: 導覽
+search_select: 選擇
+search_close: 關閉

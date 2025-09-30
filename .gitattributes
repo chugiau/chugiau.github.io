@@ -2,4 +2,8 @@
 
 * text=auto
 
-*.png lfs
+*.gif       lfs
+*.jpeg      lfs
+*.jpg       lfs
+*.png       lfs
+*.svg       lfs

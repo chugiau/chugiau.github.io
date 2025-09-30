@@ -1,7 +1,7 @@
 <!-- theme switcher -->
 {{ $class := .Class }}
 {{ if site.Params.theme_switcher }}
-  <div class="theme-switcher {{ $class }}">
+  <div class="theme-switcher {{ $class }} invisible">
     <input id="theme-switcher" data-theme-switcher type="checkbox" />
     <label for="theme-switcher">
       <span class="sr-only">theme switcher</span>
@@ -35,20 +35,31 @@
 
   <!-- theme switcher -->
   <script>
-    var darkMode = {{if eq site.Params.theme_default "dark"}}true{{else}}false{{end}};
+    var darkMode = localStorage.getItem("theme") === "dark";
 
-    {{ if eq site.Params.theme_default "system" }}
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches){darkMode = true}
-    {{ end }}
+    if (localStorage.getItem("theme") === null) {
+      darkMode = {{if eq site.Params.theme_default "dark"}}true{{else}}false{{end}};
 
-    if (localStorage.getItem("theme") === "dark"){darkMode = true}
-    else if (localStorage.getItem("theme") === "light"){darkMode = false}
-    if (darkMode){document.documentElement.classList.toggle("dark")}
-    var themeSwitch = document.querySelectorAll("[data-theme-switcher]");
+      {{ if eq site.Params.theme_default "system" }}
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        darkMode = true;
+      }
+      {{ end }}
+    }
 
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+
+    // Show theme switcher after applying theme
     document.addEventListener("DOMContentLoaded", () => {
+      var themeSwitch = document.querySelectorAll("[data-theme-switcher]");
+      var themeSwitcherContainer = document.querySelector('.theme-switcher');
+
       [].forEach.call(themeSwitch, function (ts) {
-        ts.checked = darkMode ? true : false;
+        ts.checked = darkMode;
         ts.addEventListener("click", () => {
           document.documentElement.classList.toggle("dark");
           localStorage.setItem(
@@ -57,6 +68,9 @@
           );
         });
       });
+
+      // Now make the switcher visible after the theme is applied
+      themeSwitcherContainer.classList.remove("invisible");
     });
   </script>
 {{ end }}

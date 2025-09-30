@@ -8,7 +8,6 @@ theme = "hugoplate"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
 timeZone = "Asia/Taipei"
 # post pagination
-paginate = 6 # see https://gohugo.io/extras/pagination/
 # post excerpt
 summaryLength = 70 # see https://gohugo.io/content-management/excerpts/
 # disable language
@@ -24,167 +23,160 @@ languageCode = "zh-tw"
 
 ########################### Services #############################
 [services]
-  [services.googleAnalytics]
-    ID = '' # see https://gohugo.io/templates/internal/#configure-google-analytics
+[services.googleAnalytics]
+ID = '' # see https://gohugo.io/templates/internal/#configure-google-analytics
 
-  [services.disqus]
-    shortname = '' # we use disqus to show comments in blog posts . To install disqus please follow this tutorial https://portfolio.peter-baumgartner.net/2017/09/10/how-to-install-disqus-on-hugo/
+[services.disqus]
+shortname = '' # we use disqus to show comments in blog posts . To install disqus please follow this tutorial https://portfolio.peter-baumgartner.net/2017/09/10/how-to-install-disqus-on-hugo/
 
 ########################## Permalinks ############################
 [permalinks.page]
-  "pages" = "/:slugorfilename/"
+"pages" = "/:slugorcontentbasename/"
 
 
-############################# Modules ############################
-[module]
-  [[module.mounts]]
-    source = "assets"
-    target = "assets"
+########################## Pagination ############################
+[pagination]
+disableAliases = false
+pagerSize = 10
+path = 'page'
 
-  [[module.mounts]]
-    source = "hugo_stats.json"
-    target = "assets/watching/hugo_stats.json"
 
 ############################# Build ##############################
 [build]
-  noJSConfigInAssets = false
-  useResourceCacheWhen = 'fallback'
-  [build.buildStats]
-    enable = true
-  [[build.cachebusters]]
-    source = 'assets/watching/hugo_stats\.json'
-    target = 'style\.css'
-  [[build.cachebusters]]
-    source = '(postcss|tailwind)\.config\.js'
-    target = 'css'
-  [[build.cachebusters]]
-    source = 'assets/.*\.(js|ts|jsx|tsx)'
-    target = 'js'
-  [[build.cachebusters]]
-    source = 'assets/.*\.(css|scss|sass)'
-    target = 'css'
-  [[build.cachebusters]]
-    source = 'data/.*\.(.*)$'
-    target = 'css'
-  [[build.cachebusters]]
-    source = 'assets/.*\.(.*)$'
-    target = '$1'
+noJSConfigInAssets = false
+useResourceCacheWhen = 'fallback'
+[build.buildStats]
+enable = true
+[[build.cachebusters]]
+source = 'assets/notwatching/hugo_stats\.json'
+target = 'css'
+
+############################# Modules ############################
+[module]
+[[module.mounts]]
+source = 'assets'
+target = 'assets'
+[[module.mounts]]
+disableWatch = true
+source = 'hugo_stats.json'
+target = 'assets/notwatching/hugo_stats.json'
 
 
 ############################# Outputs ############################
 [outputs]
-  home = ["HTML", "RSS", "WebAppManifest", "SearchIndex"]
+home = ["HTML", "RSS", "WebAppManifest", "SearchIndex"]
 
 ############################# Imaging ############################
 [imaging]
-  # See https://github.com/disintegration/imaging
-  # Default JPEG or WebP quality setting. Default is 75.
-  quality = 80
-  resampleFilter = "Lanczos"
+# See https://github.com/disintegration/imaging
+# Default JPEG or WebP quality setting. Default is 75.
+quality = 80
+resampleFilter = "Lanczos"
 
 ############################ Caches ##############################
 [caches]
-  [caches.images]
-    dir = ":resourceDir/_gen"
-    maxAge = "720h"
+[caches.images]
+dir = ":resourceDir/_gen"
+maxAge = "720h"
 
-  [caches.assets]
-    dir = ":resourceDir/_gen"
-    maxAge = "720h"
+[caches.assets]
+dir = ":resourceDir/_gen"
+maxAge = "720h"
 
 
 ############################ Markup ##############################
 [markup]
-  [markup.goldmark.renderer]
-    unsafe = true
+[markup.goldmark.renderer]
+unsafe = true
 
 [markup.highlight]
-  style = 'nord' # see https://xyproto.github.io/splash/docs/all.html
+style = 'nord' # see https://xyproto.github.io/splash/docs/all.html
+lineNumbersInTable = false
 
 [markup.tableOfContents]
-  startLevel = 2
-  endLevel = 5
-  ordered = true
+startLevel = 2
+endLevel = 5
+ordered = true
 
 
 ########################### Media types ###########################
 [mediaTypes]
-  [mediaTypes."application/manifest+json"]
-    suffixes = ["webmanifest"]
+[mediaTypes."application/manifest+json"]
+suffixes = ["webmanifest"]
 
 
 ########################### Output Format ##########################
 [outputFormats]
-  [outputFormats.WebAppManifest]
-    mediaType = "application/manifest+json"
-    rel = "manifest"
+[outputFormats.WebAppManifest]
+mediaType = "application/manifest+json"
+rel = "manifest"
 
-  [outputFormats.SearchIndex]
-    mediaType = "application/json"
-    baseName = "searchindex"
-    isPlainText = true
-    notAlternative = true
+[outputFormats.SearchIndex]
+mediaType = "application/json"
+baseName = "searchindex"
+isPlainText = true
+notAlternative = true
 
 
 ############################# Plugins ##############################
+
 # CSS Plugins
 [[params.plugins.css]]
-  link = "plugins/swiper/swiper-bundle.css"
-  lazy = true
+link = "plugins/swiper/swiper-bundle.css"
+lazy = true
 [[params.plugins.css]]
-  link = "plugins/glightbox/glightbox.css"
-  lazy = true
+link = "plugins/glightbox/glightbox.css"
+lazy = true
 [[params.plugins.css]]
-  link = "plugins/font-awesome/v6/brands.css"
-  lazy = true
+link = "plugins/font-awesome/v6/brands.css"
+lazy = true
 [[params.plugins.css]]
-  link = "plugins/font-awesome/v6/solid.css"
-  lazy = true
+link = "plugins/font-awesome/v6/solid.css"
+lazy = true
 [[params.plugins.css]]
-  link = "plugins/font-awesome/v6/icons.css"
-  lazy = true
+link = "plugins/font-awesome/v6/icons.css"
+lazy = true
 
 # JS Plugins
 [[params.plugins.js]]
-  link = "js/search.js"
-  lazy = false
+link = "js/search.js"
+lazy = false
 [[params.plugins.js]]
-  link = "plugins/swiper/swiper-bundle.js"
-  lazy = false
+link = "plugins/swiper/swiper-bundle.js"
+lazy = false
 [[params.plugins.js]]
-  link = "plugins/cookie.js"
-  lazy = false
+link = "plugins/cookie.js"
+lazy = false
 [[params.plugins.js]]
-  link = "plugins/glightbox/glightbox.js"
-  lazy = true
+link = "plugins/glightbox/glightbox.js"
+lazy = true
 [[params.plugins.js]]
-  link = "js/gallery-slider.js"
-  lazy = true
+link = "js/gallery-slider.js"
+lazy = true
 [[params.plugins.js]]
-  link = "js/accordion.js"
-  lazy = true
+link = "js/accordion.js"
+lazy = true
 [[params.plugins.js]]
-  link = "js/tab.js"
-  lazy = true
+link = "js/tab.js"
+lazy = true
 [[params.plugins.js]]
-  link = "js/modal.js"
-  lazy = true
+link = "js/modal.js"
+lazy = true
 [[params.plugins.js]]
-  link = "plugins/youtube-lite.js"
-  lazy = true
-
+link = "plugins/youtube-lite.js"
+lazy = true
 
 ############################# Privacy ##############################
 [privacy]
-  [privacy.disqus]
-    disable = true
-  [privacy.googleAnalytics]
-    disable = true
-  [privacy.instagram]
-    disable = true
-  [privacy.twitter]
-    disable = true
-  [privacy.vimeo]
-    disable = true
-  [privacy.youtube]
-    disable = true
+[privacy.disqus]
+disable = true
+[privacy.googleAnalytics]
+disable = true
+[privacy.instagram]
+disable = true
+[privacy.x]
+disable = true
+[privacy.vimeo]
+disable = true
+[privacy.youtube]
+disable = true

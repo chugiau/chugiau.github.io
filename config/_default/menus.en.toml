@@ -2,63 +2,63 @@
 
 # main menu
 [[main]]
-  name = "Home"
-  pageRef = "/"
-  weight = 1
+name = "Home"
+url = "/"
+weight = 1
 
 [[main]]
-  name = "About"
-  pageRef = "/about"
-  weight = 2
+name = "About"
+url = "/about"
+weight = 2
 
 [[main]]
-  name = "Elements"
-  pageRef = "/elements"
-  weight = 3
+name = "Elements"
+url = "/elements"
+weight = 3
 
 [[main]]
-  weight = 4
-  name = "Pages"
-  hasChildren = true
+name = "Pages"
+hasChildren = true
+weight = 4
 
 [[main]]
-  parent = "Pages"
-  name = "Blog"
-  pageRef = "/blog"
+parent = "Pages"
+name = "Blog"
+url = "/blog"
 
 [[main]]
-  parent = "Pages"
-  name = "Contact"
-  pageRef = "/contact"
+parent = "Pages"
+name = "Contact"
+url = "/contact"
 
 [[main]]
-  parent = "Pages"
-  name = "Authors"
-  pageRef = "/authors"
+parent = "Pages"
+name = "Authors"
+url = "/authors"
 
 [[main]]
-  parent = "Pages"
-  name = "Categories"
-  pageRef = "/categories"
+parent = "Pages"
+name = "Categories"
+url = "/categories"
 
-# [[main]]
-#   parent = "Pages"
-#   name = "404 Page"
-#   pageRef = "/404"
+#[[main]]
+#parent = "Pages"
+#name = "404 Page"
+#pageRef = "/404"
 
 
 # footer menu
 [[footer]]
-  name = "About"
-  pageRef = "/about"
-  weight = 1
+name = "About"
+url = "/about"
+weight = 1
 
 [[footer]]
-  name = "Elements"
-  pageRef = "/elements"
-  weight = 2
+name = "Elements"
+url = "/elements"
+weight = 2
 
 [[footer]]
-  name = "Privacy Policy"
-  pageRef = "/privacy-policy"
-  weight = 3
+name = "Privacy Policy"
+url = "/privacy-policy"
+weight = 3
